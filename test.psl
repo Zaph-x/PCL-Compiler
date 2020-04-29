@@ -1,0 +1,4 @@
+int i = 3.1415;
+int j = 1;
+int k = i + j;
+print k;
