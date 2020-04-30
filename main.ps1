@@ -14,4 +14,5 @@ if ($args.Count -lt 1)
 $global:symtable = @()
 .\scanner.ps1 .\test.psl
 .\parser.ps1
+.\generator.ps1 $args[0]
 Write-Host "";
