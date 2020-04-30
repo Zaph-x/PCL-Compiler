@@ -7,7 +7,7 @@ This is generator.ps1 - The generator in the compiler
 Zaph-x @ 30-apr 2020, 6:05 PM
 #>
 
-$name = $args[0].Replace(".psl", "")
+$name = $args[0].Replace(".pcl", "")
 
 $template = "
 #include <stdio.h>`n
@@ -59,5 +59,5 @@ foreach ($token in $Global:tokens) {
 }
 $template = $template.Replace("%CODE%", $codeblock)
 $template > ".\test.c"
-gcc.exe .\test.c -o $name
+gcc .\test.c -o $name
 rm .\test.c

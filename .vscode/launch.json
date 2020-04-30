@@ -9,7 +9,7 @@
             "type": "PowerShell",
             "request": "launch",
             "script": ".\\main.ps1",
-            "args": [".\\test.psl"],
+            "args": [".\\test.pcl"],
             "cwd": "${workspaceFolder}"
         }
     ]

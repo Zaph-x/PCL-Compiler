@@ -12,7 +12,7 @@ if ($args.Count -lt 1)
     return 1;
 }
 $global:symtable = @()
-.\scanner.ps1 .\test.psl
+.\scanner.ps1 $args[0]
 .\parser.ps1
 .\generator.ps1 $args[0]
 Write-Host "";
