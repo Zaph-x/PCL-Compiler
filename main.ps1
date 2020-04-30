@@ -11,3 +11,7 @@ if ($args.Count -lt 1)
     Write-Error "Please provide a file to compile";
     return 1;
 }
+$global:symtable = @()
+.\scanner.ps1 .\test.psl
+.\parser.ps1
+Write-Host "";
