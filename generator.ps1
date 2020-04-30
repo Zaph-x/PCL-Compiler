@@ -1,3 +1,12 @@
+<# 
+This is a proof of concept powershell compiler.
+This project is for fun and does not serve any real world purpose.
+
+This is scanner.ps1 - The scanner in the compiler
+
+Zaph-x @ 30-apr 2020, 6:05 PM
+#>
+
 $name = $args[0].Replace(".psl", "")
 
 $template = "
